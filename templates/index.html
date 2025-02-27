@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Voice To Text Transcription</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <h1>
+        <img src="https://cdn-icons-png.flaticon.com/512/100/100766.png" alt="Icon 1" id="icon1">
+        Voice To Text Conversion
+        <img src="https://cdn-icons-png.flaticon.com/512/2950/2950714.png" alt="Icon 2" id="icon2">
+    </h1>
+
+    <div id="speechContainer">
+        <h2>Upload your file</h2>
+        <p>Supported file types: .wav</p>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" id="fileInput" class="file-input" accept=".wav" />
+            <button type="submit" id="submitButton">Transcribe</button>
+        </form>
+
+        {% if filename %}
+        <div id="fileDetails">
+            <p>File Uploaded: {{ filename }}</p>
+        </div>
+        {% endif %}
+
+    </div>
+
+    {% if transcript != "" %}
+    <hr>
+    <div id="speechTranscriptContainer">
+        <h2>Transcription finished.</h2>
+        <p id="speechText">{{ transcript }}</p>
+    </div>
+    <br>
+    <hr>
+    {% endif %}
+
+    <div id="footer">
+        <p>Developed by Ravindu Lakshan</p>
+        <a href="https://github.com/RavinduIT" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/ravinduit/" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 4vw;
+    position: relative;
+    margin-top: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    opacity: 0.85;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+h1 img {
+    width: 10vw; 
+    height: auto;
+    max-width: 100px; 
+}
+
+h2 {
+    color: #333;
+    margin-top: 30px;
+    font-size: 35px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    opacity: 0.85;
+}
+
+#speechContainer {
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 600px;
+    background: linear-gradient(145deg, #ffffff, #f4f4f9);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#submitButton {
+    background-color: #0191FE;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 12px 35px;
+    margin-top: 25px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#submitButton:hover {
+    cursor: pointer;
+    background-color: #0177d8;
+    transform: scale(1.05);
+}
+
+#speechTranscriptContainer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#speechText {
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+#fileDetails {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e7f3fe;
+    border-radius: 5px;
+    border: 1px solid #d0e9ff;
+    text-align: center;
+}
+
+#fileDetails p {
+    font-size: 18px;
+    color: #333;
+}
+
+#customFileButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#customFileButton:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#customFileButton i {
+    margin-right: 8px;
+}
+
+#footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+    font-size: 16px;
+    opacity: 0.7;
+    background-color: #0191FE;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+#footer a:hover {
+    color: #f4f4f9;
+}
+
+#footer i {
+    margin-right: 8px;
+}
+
+#footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#footer .social-icons a {
+    font-size: 24px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+#footer .social-icons a:hover {
+    color: #0191FE;
+}
+
